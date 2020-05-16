@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Menu */
+
+
+.carousel-inner {
+  height: 60vh;
+  width: 100vw;
+}
+
+#imagem-slide {
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover !important;
+}
+
+.bg-light {
+  background-color: #ffffff!important;
+
+} 
+.img-menu {
+  width: 150px !important;
+  margin-right: 20px;
+}
+
+#opcoes-menu a {
+  font-size: 20px;
+}
