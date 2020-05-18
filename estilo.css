@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  max-width: 100%;
 }
 
 
@@ -22,13 +23,28 @@
 }
 
 
+
 /* Menu */
+
+.navbar {
+  padding: 5px;
+}
+
+.carousel-caption h5 {
+  float: right !important; 
+}
+.legenda {
+  color: white;
+  font-size: 15px;
+}
+
+
 .carousel-inner {
   width: 100vw;
 }
 
 #imagem-slide {
-  height: 50vh;
+  height: 55vh;
   width: 100vw;
   object-fit: cover !important;
 }
@@ -40,11 +56,14 @@
 .img-menu {
   width: 140px !important;
   margin-right: 20px;
+  margin-left: 10px;
 }
 
 #opcoes-menu a {
   font-size: 20px;
 }
+
+
 
 
 /* Serviços */
@@ -55,37 +74,44 @@
 
 .servicos {
   display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(2, 400px);
   text-align: center;
   justify-content: center;
   list-style-type: none;
   font-size: 20px;
+  padding: 20px;
 }
+
+@media (min-width: 300px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    max-width: 100%;
+    
+  }
+}
+@media (min-width: 600px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+
+
 ul {
   list-style-type: none;
   color: black;
-}
-@media (min-width: 400px) {
-  .servicos {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(2, 200px);
-  }
-}
-@media (min-width: 880px) {
-  .servicos {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(3, 200px);
-  }
-}
-@media (min-width: 1200px) {
-  .servicos {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(4, 200px);
-  }
+  padding: 20px;
 }
 .descricao-servicos{
   padding-bottom: 20px;
@@ -95,4 +121,152 @@ ul {
 
 .descricao-servicos a {
   color: rgb(48, 47, 47);
+}
+
+/* Formulario */
+.formulario {
+  width: 100vw;
+
+}
+.formulario-li {
+  width: 50%;
+}
+
+.contato-descricao {
+  display: grid;
+}
+@media (min-width: 400px) {
+  .contato-descricao {
+    display: grid;
+  grid-template-columns: repeat(2, 1000px);
+  }
+}
+
+
+/* Serviços */
+.servicos-quadrados {
+  display: grid;
+
+}
+
+.fas {
+  padding: 5px;
+}
+
+.descricao-servicos {
+  font-size: 12px;
+}
+
+.quadrado-servicos {
+  width: 300px;
+  height: 250px;
+  background-color: black;
+  text-align: center;  
+  padding-top: 30px;
+}
+
+@media (min-width: 300px) {
+  .quadrado-servicos {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    text-align: center;  
+    padding-top: 20px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 300px) {
+.servicos-imagen {
+  width: 20px;
+  height: 20px;
+}
+
+
+@media (min-width: 500px) {
+  .quadrado-servicos {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    text-align: center;  
+    padding-top: 50px;
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 500px) {
+  .servicos-imagen {
+    width: 50px;
+  height: 50px;
+  }
+
+
+}
+
+
+@media (min-width: 300px) {
+  .servicos-quadrados {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 1em;
+ 
+  }
+@media (min-width: 300px) {
+  .quadrado-servicos {
+    width: 120px;
+    height: 85px;
+    background-color: black;
+    
+    
+  }
+}
+
+@media (min-width: 600px) {
+  .quadrado-servicos {
+    width: 300px;
+    height: 180px;
+    background-color:  black;
+    width: 300px;
+    height: 130px;
+  }
+  }
+
+  @media (min-width: 880px) {
+    .quadrado-servicos {
+      width: 300px;
+      height: 180px;
+      background-color:  black;
+      width: 300px;
+      height: 200px;
+    }
+    }
+
+
+
+@media (min-width: 600px) {
+  .servicos-quadrados {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 1em;
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .servicos-quadrados {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  padding: 10px;
+  justify-content: center;
+  gap: 1em;
+  }
+}
+
+.descricao {
+  color: white;
 }
