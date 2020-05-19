@@ -7,6 +7,9 @@
   max-width: 100%;
 }
 
+body {
+  background-color: rgb(168, 43, 43);
+}
 
 .carousel-indicators li {
   width: 0px;
@@ -19,23 +22,42 @@
 /* Titulos */
 .titulo {
   text-align: center;
-  padding-bottom: 40px;
+
+  
 }
+
 
 
 
 /* Menu */
-
+.titulo-nav {
+  border-left: 20px;
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive;
+}
+#menu {
+  background-color: rgb(168, 43, 43);
+}
 .navbar {
   padding: 5px;
+  background-color: rgb(168, 43, 43);
+}
+.nav-link {
+  border-right: 20px;
 }
 
-.carousel-caption h5 {
+.carousel-caption h1 {
   float: right !important; 
+  font-family: 'Dancing Script', cursive;
 }
 .legenda {
   color: white;
-  font-size: 15px;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+}
+.imagemtres {
+  color:  rgb(0, 0, 0);
+
 }
 
 
@@ -48,6 +70,9 @@
   width: 100vw;
   object-fit: cover !important;
 }
+#imagemdois {
+  color: black;
+}
 
 .bg-light {
   background-color: #ffffff!important;
@@ -57,7 +82,18 @@
   width: 140px !important;
   margin-right: 20px;
   margin-left: 10px;
+  background-color: rgb(168, 43, 43);
 }
+
+@media (min-width: 650px) {
+  .img-menu {
+    width: 140px !important;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: right !important;
+  }
+}
+
 
 #opcoes-menu a {
   font-size: 20px;
@@ -75,35 +111,37 @@
 .servicos {
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  text-align: center;
-  justify-content: center;
   list-style-type: none;
   font-size: 20px;
   padding: 20px;
+  padding-bottom: 100px;
 }
 
 @media (min-width: 300px) {
   .servicos {
     display: grid;
     grid-template-columns: repeat(1, 300px);
-    text-align: center;
     justify-content: center;
     list-style-type: none;
     font-size: 20px;
     max-width: 100%;
-    
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 600px) {
   .servicos {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    text-align: center;
+    grid-template-columns: repeat(3, 320px);
     justify-content: center;
     list-style-type: none;
     font-size: 20px;
     padding: 20px;
+    padding-bottom: 100px;
   }
+}
+.titulo-servicos {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -120,7 +158,7 @@ ul {
 }
 
 .descricao-servicos a {
-  color: rgb(48, 47, 47);
+  color: black;
 }
 
 /* Formulario */
