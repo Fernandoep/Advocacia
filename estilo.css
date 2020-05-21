@@ -1,486 +1,595 @@
-                                * {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                            text-decoration: none;
-                            color: black;
-                            max-width: 100%;
-                        }
-                        
-                        body {
-                            background-color: rgb(105, 105, 105);
-                            font-family: 'Bad Script', cursive;
-                        }
-                        
-                        .carousel-indicators li {
-                            width: 0px;
-                        }
-                        
-                        .carousel-caption p {
-                            color: white;
-                        }
-                        /* Titulos */
-                        
-                        .titulo {
-                            text-align: left;
-                            font-family: 'Bad Script', cursive;
-                            padding-bottom: 100px;
-                            font-size: 40px;
-                            padding-top: 30px;
-                        }
-                       
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+color: black;
+max-width: 100%;
+}
 
-                        @media (min-width: 1000px) {
-                            .titulo {
-                                text-align: left;
-                                font-family: 'Bad Script', cursive;
-                                padding-bottom: 100px;
-                                padding-top: 20px;
-                                font-size: 40px;
-                            }
-                        }
-                        /* Menu */
-                        
-                        .titulo-nav {
-                            border-left: 20px;
-                            font-size: 35px;
-                            font-family: 'Bad Script', cursive;
-                        }
-                        
-                        #menu {
-                            background-color: rgb(105, 105, 105);
-                        }
-                        
-                        .navbar {
-                            padding: 5px;
-                            background-color: rgb(105, 105, 105));
-                        }
-                        
-                        .nav-link {
-                            border-right: 20px;
-                            color: black !important ;
-                        }
-                        .nav-link:hover {
-                          color: rgb(44, 32, 32) !important ;
-                        }
-                        
-                        .carousel-caption h1 {
-                            float: right !important;
-                            font-family: 'Bad Script', cursive;
-                            text-align: right;
-                        }
-                        
-                        .legenda {
-                            color: white;
-                            font-size: 25px;
-                            font-family: 'Bad Script', cursive;
-                        }
-                        
-                        .imagemtres {
-                            color: rgb(0, 0, 0);
-                        }
-                        
-                        .carousel-inner {
-                            width: 100vw;
-                        }
-                        
-                        #imagem-slide {
-                            height: 55vh;
-                            width: 100vw;
-                            object-fit: cover !important;
-                        }
-                        
-                        #imagemdois {
-                            color: black;
-                        }
-                        
-                        .bg-light {
-                            background-color: #ffffff!important;
-                        }
-                        
-                        .img-menu {
-                            width: 140px !important;
-                            margin-right: 20px;
-                            margin-left: 10px;
-                            background-color: rgb(168, 43, 43);
-                        }
-                        
-                        @media (min-width: 650px) {
-                            .img-menu {
-                                width: 140px !important;
-                                margin-right: 20px;
-                                margin-left: 10px;
-                                float: right !important;
-                            }
-                        }
-                        
-                        #opcoes-menu a {
-                            font-size: 20px;
-                        }
-                        /* fim Menu */
-                        /* Destaques */
-                        
-                        .section-destaques {
-                            padding: 50px;
-                            font-family: Arial, Helvetica, sans-serif;
-                        }
-                        
-                        .destaques {
-                            justify-content: center;
-                        }
-                        
-                        @media (min-width: 1000px) {
-                            .destaques {
-                                display: grid;
-                                grid-template-columns: repeat(2, 600px);
-                                justify-content: center;
-                            }
-                        }
-                        /* Fim Destaques */
-                        /* Serviços */
-                        
-                        .section-servicos {
-                            padding: 50px;
-                            font-family: Arial, Helvetica, sans-serif;
-                        }
-                        
-                        .servicos {
-                            display: grid;
-                            list-style-type: none;
-                            font-size: 20px;
-                            padding: 20px;
-                            padding-bottom: 100px;
-                        }
-                        
-                        @media (min-width: 550px) {
-                            .servicos {
-                                display: grid;
-                                grid-template-columns: repeat(1, 300px);
-                                justify-content: center;
-                                list-style-type: none;
-                                font-size: 20px;
-                                max-width: 100%;
-                                padding-bottom: 100px;
-                            }
-                        }
-                        
-                        @media (min-width: 700px) {
-                            .servicos {
-                                display: grid;
-                                grid-template-columns: repeat(2, 320px);
-                                justify-content: center;
-                                list-style-type: none;
-                                font-size: 20px;
-                                padding: 20px;
-                                padding-bottom: 100px;
-                            }
-                        }
-                        
-                        @media (min-width: 1000px) {
-                            .servicos {
-                                display: grid;
-                                grid-template-columns: repeat(3, 320px);
-                                justify-content: center;
-                                list-style-type: none;
-                                font-size: 20px;
-                                padding: 20px;
-                                padding-bottom: 100px;
-                            }
-                        }
-                        
-                        .titulo-servicos {
-                            text-align: center;
-                            padding-bottom: 20px;
-                        }
-                        
-                        ul {
-                            list-style-type: none;
-                            color: black;
-                            padding: 20px;
-                        }
-                        
-                        .descricao-servicos {
-                            padding-bottom: 20px;
-                            font-size: 15px;
-                            padding: 5px;
-                        }
-                        
-                        .descricao-servicos a {
-                            color: black;
-                        }
-                        /* Fim Serviços */
-                      
+body {
+background-color: #999186;
+font-family: 'Bad Script', cursive;
+}
+
+.carousel-indicators li {
+width: 0px;
+}
+
+.carousel-caption p {
+color: white;
+}
+/* Titulos */
+
+.titulo {
+text-align: left;
+font-family: 'Bad Script', cursive;
+padding-bottom: 100px;
+font-size: 40px;
+padding-top: 30px;
+}
+
+
+@media (min-width: 1000px) {
+.titulo {
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+}
 
 
 
-                        /* Serviços */
-                        
-                        .servicos-quadrados {
-                            display: grid;
-                        }
-                        
-                        .fas {
-                            padding: 5px;
-                        }
-                        
-                        .descricao-servicos {
-                            font-size: 12px;
-                        }
-                        
-                        .quadrado-servicos {
-                            width: 300px;
-                            height: 250px;
-                            background-color: black;
-                            text-align: center;
-                            padding-top: 30px;
-                        }
-                        
-                        @media (min-width: 300px) {
-                            .quadrado-servicos {
-                                width: 300px;
-                                height: 250px;
-                                background-color: black;
-                                text-align: center;
-                                padding-top: 20px;
-                                font-size: 11px;
-                            }
-                        }
-                        
-                        @media (min-width: 300px) {
-                            .servicos-imagen {
-                                width: 20px;
-                                height: 20px;
-                            }
-                            @media (min-width: 500px) {
-                                .quadrado-servicos {
-                                    width: 300px;
-                                    height: 250px;
-                                    background-color: black;
-                                    text-align: center;
-                                    padding-top: 50px;
-                                    font-size: 20px;
-                                }
-                            }
-                            @media (min-width: 500px) {
-                                .servicos-imagen {
-                                    width: 50px;
-                                    height: 50px;
-                                }
-                            }
-                            @media (min-width: 300px) {
-                                .servicos-quadrados {
-                                    display: flex;
-                                    padding: 10px;
-                                    justify-content: center;
-                                    gap: 1em;
-                                }
-                                @media (min-width: 300px) {
-                                    .quadrado-servicos {
-                                        width: 120px;
-                                        height: 85px;
-                                        background-color: black;
-                                    }
-                                }
-                                @media (min-width: 600px) {
-                                    .quadrado-servicos {
-                                        width: 300px;
-                                        height: 180px;
-                                        background-color: black;
-                                        width: 300px;
-                                        height: 130px;
-                                    }
-                                }
-                                @media (min-width: 880px) {
-                                    .quadrado-servicos {
-                                        width: 300px;
-                                        height: 180px;
-                                        background-color: black;
-                                        width: 300px;
-                                        height: 200px;
-                                    }
-                                }
-                                @media (min-width: 600px) {
-                                    .servicos-quadrados {
-                                        display: flex;
-                                        padding: 10px;
-                                        justify-content: center;
-                                        gap: 1em;
-                                    }
-                                }
-                                @media (min-width: 1200px) {
-                                    .servicos-quadrados {
-                                        display: grid;
-                                        grid-template-columns: repeat(4, 300px);
-                                        padding: 10px;
-                                        justify-content: center;
-                                        gap: 1em;
-                                    }
-                                }
-                                .descricao {
-                                    color: white;
-                                }
-                            /* Fim Serviços */
 
-                            /* Links */
-                            .section-links {
-                                padding: 50px;
-                            }
-                                .links {
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
+/* Menu */
+.titulo-nav {
+border-left: 20px !important;
+font-size: 35px;
+font-family: 'Bad Script', cursive;
+}
 
-                                .butonlinks {
-                                    border-color: none;
-                                }
+#menu {
+background-color: #999186;
+}
 
-                                @media (min-width: 700px) {
-                                    .butonlinks {
-                                        float: right;
-                                        border-color: none;
-                                    }
-                                } 
+.navbar {
+position: -webkit-sticky; /* Necessário para funcionar no Safari */
+position: sticky;
+top: 0;
+background-color: white;
+z-index: 1;
+max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .navbar {
+        position: -webkit-sticky; /* Necessário para funcionar no Safari */
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        padding: 0px;
+        max-width: 100%;
+        }
+        .navbar .titulo-nav {
+            padding-left: 50px;
+        }
+}
+
+.nav-link {
+border-right: 20px;
+color: black !important ;
+font-size: 20px;
+
+}
+.nav-link:hover {
+color: rgb(44, 32, 32) !important ;
+}
+
+.carousel-caption h1 {
+float: right !important;
+font-family: 'Bad Script', cursive;
+text-align: right;
+}
+
+.legenda {
+color: white;
+font-size: 25px;
+font-family: 'Bad Script', cursive;
+}
+
+.imagemtres {
+color: rgb(0, 0, 0);
+}
+
+.carousel-inner {
+width: 100vw;
+}
+
+#imagem-slide {
+height: 55vh;
+width: 100vw;
+object-fit: cover !important;
+}
+
+#imagemdois {
+color: black;
+}
+
+.bg-light {
+background-color: #ffffff!important;
+}
+
+.img-menu {
+width: 140px !important;
+margin-right: 20px;
+margin-left: 10px;
+background-color: rgb(168, 43, 43);
+}
+
+@media (min-width: 650px) {
+.img-menu {
+    width: 140px !important;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: right !important;
+}
+}
+
+#opcoes-menu a {
+font-size: 20px;
+}
+/* fim Menu */
 
 
 
-                            /* Fim Links */
 
-                                
-                            /* Escritorio */
-                             .escritorio {
-                                font-family: Arial, Helvetica, sans-serif;
-                                padding: 50px;
-                             }
-                             .leganda-escritorio {
-                                 letter-spacing: 1px;
-                                 color: black;
-                                 font-size: 20px;
-                                 max-width: 100%;
-                             }
+/* Destaques */
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    gap: 2em;
+    justify-content: center;
 
-                             @media (min-width: 1000px) {
-                                .leganda-escritorio {
-                                    letter-spacing: 1px;
-                                    color: black;
-                                    font-size: 20px;
-                                }
-                             }
+}
 
-                            /* Fim Escritorio */
-
-
-
-                            /* Formulario */   
-                            .formulario {
-                                padding: 50px;
-                            }
+@media (min-width: 300px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        gap: 2em;
+        justify-content: center;
+    }
+}
+@media (min-width: 500px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 2em;
+        justify-content: center;
+    }
+}
 
 
-                                   
-                        .formulario-li {
-                            display: grid;
-                            text-align: center;
-                        
-                        }
-                        
-                         
-                        @media (min-width: 300px) {
-                            .formulario-li {
-                                display: grid;
-                                grid-template-columns: repeat(1, 300px);
-                                justify-content: center;
-                                border-radius: 3px;
-                               
-                                
-                            }
-                        }
+@media (min-width: 674px) {
+    .imagem {
+        width: 100%;
+        height: 300px;
+        border-left: 20px;
+        border: 2px solid black;
+    }
+}
+@media (min-width: 740px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        gap: 2em;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 880px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(2, 420px);
+        gap: 2em;
+        justify-content: center;
+    }
+}
 
 
-                        @media (min-width: 300px) {
-                            #espacoFormulario {
-                                    border-radius: 5px;
-                                    padding: 5px;
-                            }
-                                    #espacoFormularioArea {
-                                        border-radius: 5px;
-                                        padding: 5px;
-                                    }
-                            }
-                        }
+}
+@media (min-width: 600px) {
+    .imagem {
+        width: 100%;
+        height: 300px;
+        border-left: 20px;
+        border: 2px solid black;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+        gap: 2em;
+        justify-content: center;
+    }
+}
+
+.imagem {
+    width: 600px;
+    height: 550px;
+    border-left: 20px;
+    border: 2px solid black;
+
+}
+.legenda-imagem {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.noticia-data {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top: 0px;
+}
 
 
 
-                        @media (min-width: 1100px) {
-                            .formulario-li {
-                                display: grid;
-                                grid-template-columns: repeat(2, 600px);
-                                justify-content: center;
-                               
-                                
-                            }
-                        }
-                            
+.imagem-div {
+    width: 100%;
+    height: 250px;
+}
+/* Fim Destaques */
+
+
+/* Serviços */
+.section-servicos {
+padding: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicos {
+display: grid;
+list-style-type: none;
+font-size: 20px;
+padding: 20px;
+padding-bottom: 100px;
+}
+
+@media (min-width: 550px) {
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+}
+
+@media (min-width: 700px) {
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+}
+
+@media (min-width: 1000px) {
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+}
+
+.titulo-servicos {
+text-align: center;
+padding-bottom: 20px;
+}
+
+ul {
+list-style-type: none;
+color: black;
+padding: 20px;
+}
+
+.descricao-servicos {
+padding-bottom: 20px;
+font-size: 15px;
+padding: 5px;
+}
+
+.descricao-servicos a {
+color: black;
+}
+.servicos-quadrados {
+display: grid;
+}
+
+.fas {
+padding: 5px;
+}
+
+.descricao-servicos {
+font-size: 12px;
+}
+
+.quadrado-servicos {
+width: 300px;
+height: 250px;
+background-color: black;
+text-align: center;
+padding-top: 30px;
+}
+
+@media (min-width: 300px) {
+.quadrado-servicos {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 11px;
+}
+}
+
+@media (min-width: 300px) {
+.servicos-imagen {
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 500px) {
+    .quadrado-servicos {
+        width: 300px;
+        height: 250px;
+        background-color: black;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 500px) {
+    .servicos-imagen {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 300px) {
+    .servicos-quadrados {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        gap: 1em;
+    }
+    @media (min-width: 300px) {
+        .quadrado-servicos {
+            width: 120px;
+            height: 85px;
+            background-color: black;
+        }
+    }
+    @media (min-width: 600px) {
+        .quadrado-servicos {
+            width: 300px;
+            height: 180px;
+            background-color: black;
+            width: 300px;
+            height: 130px;
+        }
+    }
+    @media (min-width: 880px) {
+        .quadrado-servicos {
+            width: 300px;
+            height: 180px;
+            background-color: black;
+            width: 300px;
+            height: 200px;
+        }
+    }
+    @media (min-width: 600px) {
+        .servicos-quadrados {
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            gap: 1em;
+        }
+    }
+    @media (min-width: 1200px) {
+        .servicos-quadrados {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            padding: 10px;
+            justify-content: center;
+            gap: 1em;
+        }
+    }
+    .descricao {
+        color: white;
+    }
+/* Fim Serviços */
 
 
 
-                        @media (min-width: 1100px) {
-                            #espacoFormulario {
-                                width: 600px;
-                                    height: 45px;
-                                    margin-bottom: 30px;
-                                    border-radius: 5px;
-                                    padding: 20px;
-                            }
-                                    #espacoFormularioArea {
-                                        width: 600px;
-                                        margin-bottom: 30px;
-                                        border-radius: 5px;
-                                        padding: 20px;
-                                    }
-                            }
-                        }
+/* Links */
+.imagem-links {
+    width: 100px;
+}
 
-                     
-                        /*
-                            .nome input {
-                                width: 600px;
-                                height: 45px;
-                                margin-bottom: 30px;
-                                border-radius: 5px;
-                                padding: 20px;
-                            }
-                            .email input {
-                                width: 600px;
-                                height: 45px;
-                                margin-bottom: 30px;
-                                border-radius: 5px;
-                                padding: 20px;
-                            }
-                            .assunto input {
-                                width: 600px;
-                                height: 45px;
-                                margin-bottom: 30px;
-                                border-radius: 5px;
-                                padding: 20px;
-                            }
-                            .mensagem textarea {
-                                width: 600px;
-                                margin-bottom: 30px;
-                                border-radius: 5px;
-                                padding: 20px;
-                            }
-                            */
-                            .enviar {
+.section-links {
+    padding: 50px;
+}
+    .links {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-                            }
+    .butonlinks {
+        border-color: none;
+    }
 
-                            .texto-contato {
-                                margin: 20px;
-                                letter-spacing: 2px;
-                            }
-                            .texto-contato .texto-espaco {
-                              border-bottom: 80px;
-                            } 
+    @media (min-width: 700px) {
+        .butonlinks {
+            float: right;
+            border-color: none;
+        }
+    } 
 
-                            /* Fim Formulario */
 
-                                
+
+/* Fim Links */
+
+    
+/* Escritorio */
+.escritorio {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+.leganda-escritorio {
+    letter-spacing: 1px;
+    color: black;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .leganda-escritorio {
+        letter-spacing: 1px;
+        color: black;
+        font-size: 20px;
+    }
+}
+
+/* Fim Escritorio */
+
+
+
+/* Formulario */   
+.formulario {
+    padding: 50px;
+}
+
+
+    
+.formulario-li {
+display: grid;
+text-align: center;
+
+}
+
+
+@media (min-width: 300px) {
+.formulario-li {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    border-radius: 3px;
+
+    
+}
+}
+
+
+@media (min-width: 300px) {
+#espacoFormulario {
+        border-radius: 5px;
+        padding: 5px;
+}
+        #espacoFormularioArea {
+            border-radius: 5px;
+            padding: 5px;
+        }
+}
+}
+
+
+
+@media (min-width: 1100px) {
+.formulario-li {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+
+    
+}
+}
+
+
+
+
+@media (min-width: 1100px) {
+#espacoFormulario {
+    width: 600px;
+        height: 45px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+}
+        #espacoFormularioArea {
+            width: 600px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            padding: 20px;
+        }
+}
+}
+
+
+/*
+.nome input {
+    width: 600px;
+    height: 45px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.email input {
+    width: 600px;
+    height: 45px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.assunto input {
+    width: 600px;
+    height: 45px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.mensagem textarea {
+    width: 600px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+*/
+.enviar {
+
+}
+
+.texto-contato {
+    margin: 20px;
+    letter-spacing: 2px;
+}
+.texto-contato .texto-espaco {
+border-bottom: 80px;
+} 
+
+/* Fim Formulario */
+
+    
