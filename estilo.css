@@ -8,7 +8,7 @@ max-width: 100%;
 
 body {
 background-color: #FFF5EE;
-font-family: 'Bad Script', cursive;
+font-family: 'Montserrat', sans-serif;
 }
 
 .carousel-indicators li {
@@ -25,7 +25,6 @@ text-align: center !important;
 font-family: 'Bad Script', cursive;
 padding-bottom: 20px;
 font-size: 40px;
-padding-top: 10px;
 }
 
 
@@ -457,7 +456,7 @@ padding-top: 30px;
 /* Links */
 .section-links {
     padding: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -518,7 +517,7 @@ padding-top: 30px;
 }
 .escritorio {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 30px;
 }
 
 @media (min-width: 1000px) {
@@ -559,12 +558,9 @@ padding-top: 30px;
 }
     
 .formulario-li {
-display: grid;
+
 text-align: center;
 
-}
-.fa {
-  
 }
 
 
@@ -574,11 +570,12 @@ text-align: center;
     grid-template-columns: repeat(1, 300px);
     justify-content: center;
     border-radius: 3px;
-
-    
 }
 }
 
+.texto-formilario {
+    border-top: 300px;
+}
 
 @media (min-width: 300px) {
 #espacoFormulario {
@@ -597,7 +594,7 @@ text-align: center;
 @media (min-width: 1100px) {
 .formulario-li {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: repeat(1, 600px);
     justify-content: center;
 
     
@@ -622,17 +619,28 @@ text-align: center;
             padding: 20px;
         }
 }
-
-
+.div-contato {
+    padding: 20px;
+}
 .botao-enviar {
     padding: 5px;
+}
+
+@media(min-width: 900px) {
+    .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+   
+
+    }
 }
 
 
 .texto-contato {
     margin: 20px;
     letter-spacing: 2px;
-    padding-top: 80px;
+
 }
 .imagem-contato {
     padding: 20px;
@@ -643,7 +651,7 @@ text-align: center;
 /* Fim Formulario */
 
 .footer {
-    padding: 80px;
+    padding: 5px;
     left: 0;
     bottom: 0;
     width: 100%;
