@@ -84,7 +84,7 @@ max-width: 100%;
 .nav-link {
 border-right: 20px;
 color: white !important ;
-font-size: 20px;
+font-size: 17px;
 
 }
 .nav-link:hover {
@@ -625,16 +625,26 @@ text-align: center;
 .botao-enviar {
     padding: 5px;
 }
-
-@media(min-width: 900px) {
+@media(min-width: 950px) {
     .footer {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 350px);
     justify-content: center;
    
 
     }
 }
+
+@media(min-width: 1200px) {
+    .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+   
+
+    }
+}
+
 
 
 .texto-contato {
